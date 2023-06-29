@@ -11,12 +11,10 @@
     <p>数値を入力してください</p>
     <form action="{% url 'index' %}" method="post">
         {% csrf_token %}
-        
-        {% for form in forms %}
-            <p>{{form}}</p>
-        {% endfor %}
-            
-        <input type='submit' value="click">
+
+        {{ forms.as_p }}  
+
+        <button type='submit' name="submit">押す</button>
     </form>
     <p>{{ answer }}</p>
 </body>
