@@ -5,3 +5,7 @@ class Calculator(models.Model):
     val2 = models.FloatField()
     val3 = models.FloatField()
     val4 = models.FloatField()
+
+
+class Calcu45(models.Model):
+    width = models.FloatField()

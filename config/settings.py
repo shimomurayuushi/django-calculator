@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'calculator',
+    'calculator.apps.CalculatorConfig',
+    'django_bootstrap5',
 ]
 
 MIDDLEWARE = [

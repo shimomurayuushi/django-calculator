@@ -1,0 +1,32 @@
+{% load django_bootstrap5 %}
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% bootstrap_css %}
+    <title>{{ title }}</title>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            配管計算機
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">calculator45</h5>
+            <p class="card-text">45°の立体配管で使えます。捻り配管の計算ができます。</p>
+            <a href="{% url 'index' %}">45°捻り配管</a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            配管計算機
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">calu45</h5>
+            <p class="card-text">45°の平面配管の計算に使えます。</p>
+            <a href="{% url 'calcu45' %}">45°配管</a>
+        </div>
+      </div>
+</body>
+</html>
+
